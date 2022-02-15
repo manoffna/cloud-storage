@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.gb.client.MainController">
+    <ListView fx:id="clientView" layoutX="20.0" layoutY="52.0" prefHeight="315.0" prefWidth="247.0"/>
+    <ListView fx:id="serverView" layoutX="320.0" layoutY="52.0" prefHeight="315.0" prefWidth="262.0"/>
+    <TextField fx:id="clientPath" editable="false" layoutX="70.0" layoutY="28.0" prefHeight="26.0" prefWidth="197.0"/>
+    <ComboBox fx:id="disks" layoutX="20.0" layoutY="28.0" prefHeight="26.0" prefWidth="44.0"/>
+    <TextField fx:id="serverPath" editable="false" layoutX="320.0" layoutY="28.0" prefHeight="26.0" prefWidth="262.0"/>
+    <Button onAction="#download" layoutX="276.0" layoutY="136.0" mnemonicParsing="false" prefHeight="26.0"
+            prefWidth="36.0" text="&lt;"/>
+    <Button onAction="#upload" layoutX="276.0" layoutY="220.0" mnemonicParsing="false" prefHeight="26.0"
+            prefWidth="36.0" text="&gt;"/>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta
+  http-equiv="Content-Type"
+  content="text/html; charset=UTF-8" />
+<title>Eclipse Project Release Notes 4.19</title>
+<!-- Please validate as "xhtml1 strict", at
+https://validator.w3.org/check?uri=http%3A%2F%2Fwww.eclipse.org%2Feclipse%2Fdevelopment%2Freadme_eclipse_4.19.html;ss=1
+(It must be "on website" to validate.)
+-->
+</head>
+<body>
+  <h1>
+    <a
+      class="mozTocH1"
+      name="mozTocId299852">Eclipse Project Release Notes</a>
+  </h1>
+  <p>
+    <a
+      class="mozTocH1"
+      name="mozTocId299852">Release 4.19</a>
+  </p>
+  <p>
+    <a
+      class="mozTocH1"
+      name="mozTocId299852">Last revised February 21, 2020</a>
+  </p>
+  <!-- 
+This following link to www.eclipse.org should be commented out
+or removed in final version of the 
+"web version" of the readme, since it does not make sense to 
+have there. But in the "product's readme" it will point people 
+to "the latest version" since there _might_ be changes made 
+after the release.
+  <p>
+    The latest version of this document can be found on the web at <a href="https://www.eclipse.org/eclipse/development/readme_eclipse_4.19.php">Eclipse Release Notes 4.19</a>. There may or may
+    not be changes made after the product is released. You can tell by checking the "last revised" date near the top of this page.
+  </p>
+-->
+
+  <p style="text-align: left; font-weight: bold;">
+    <a
+      class="mozTocH1"
+      name="mozTocId299852"> This software is OSI Certified Open Source Software.<br /> OSI Certified is a certification mark of the Open Source Initiative.
+    </a>
+  </p>
+  <h2 id="TargetOperatingEnvironments1">
+    <a
+      class="mozTocH2"
+      name="mozTocId438134" />
+  </h2>
+  <ol id="mozToc">
+    <!--mozToc h1 1 h2 2 h3 3 h4 4 h5 5 h6 6-->
+    <li><a href="#mozTocId299852">Eclipse Project Release Notes</a>
+      <ol>
+        <li><a href="#mozTocId315234">Target Operating Environments</a></li>
+        <li><a href="#mozTocId569479">Compatibility with Previous Releases</a>
+          <ol>
+            <li><a href="#mozTocId324309">Compatibility of Release 4.19 with 4.18</a></li>
+          </ol></li>
+        <li><a href="#mozTocId214943">Known Issues</a>
+          <ol>
+            <li><a href="#mozTocId758150">General problems</a></li>
+            <li><a href="#mozTocId559320">General - Startup</a>
+              <ol>
+                <li><a href="#mozTocId693657">Installation/Configuration issues that can cause Eclipse to fail start</a></li>
+                <li><a href="#mozTocId337416"> Invalid characters in install directory prevents Eclipse from starting </a></li>
+                <li><a href="#mozTocId639565">Hanging during class loading when out of permanent generation memory</a></li>
+              </ol></li>
+            <li><a href="#mozTocId148479">General - GCJ</a>
+              <ol>
+                <li><a href="#mozTocId584602">Problems with classloaders in created threads</a></li>
+                <li><a href="#mozTocId403443">Deadlock creating executable extension in Plugin.startup</a></li>
+                <li><a href="#mozTocId984286">Potential Problems Converting Plug-in Manifests</a></li>
+                <li><a href="#mozTocId993987">Location for Debug Options File on Mac OS</a></li>
+                <li><a href="#mozTocId808188">Issues with JNI that use FindClass</a></li>
+              </ol></li>
+            <li><a href="#mozTocId324774">Platform - Ant</a>
+              <ol>
+                <li><a href="#mozTocId480194">Custom Ant tasks and Ant types must be separate from plug-in library JARs</a></li>
+                <li><a href="#mozTocId912215">XDoclet support from within Eclipse</a></li>
+                <li><a href="#mozTocId31051">Ant Edi
